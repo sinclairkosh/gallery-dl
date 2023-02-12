@@ -79,6 +79,6 @@ class BunkrAlbumExtractor(LolisafeAlbumExtractor):
                      ".zip", ".rar", ".7z")):
                 file["_http_headers"] = headers
                 file["file"] = file["file"].replace(
-                    "://cdn", "://media-files", 1)
+                    "://cdn", "://media-files8", 1)
 
         return files, data
