@@ -14,13 +14,13 @@ import json
 
 
 class BunkrAlbumExtractor(LolisafeAlbumExtractor):
-    """Extractor for bunkr.ru albums"""
+    """Extractor for bunkr.su albums"""
     category = "bunkr"
-    root = "https://bunkr.ru"
-    pattern = r"(?:https?://)?(?:app\.)?bunkr\.(?:ru|is|to)/a/([^/?#]+)"
+    root = "https://bunkr.su"
+    pattern = r"(?:https?://)?(?:app\.)?bunkr\.(?:su|ru|is|to)/a/([^/?#]+)"
     test = (
-        ("https://bunkr.ru/a/Lktg9Keq", {
-            "pattern": r"https://cdn\.bunkr\.ru/test-テスト-\"&>-QjgneIQv\.png",
+        ("https://bunkr.su/a/Lktg9Keq", {
+            "pattern": r"https://cdn\.bunkr\.su/test-テスト-\"&>-QjgneIQv\.png",
             "content": "0c8768055e4e20e7c7259608b67799171b691140",
             "keyword": {
                 "album_id": "Lktg9Keq",
@@ -34,12 +34,12 @@ class BunkrAlbumExtractor(LolisafeAlbumExtractor):
         }),
         # mp4 (#2239)
         ("https://app.bunkr.is/a/ptRHaCn2", {
-            "pattern": r"https://media-files\.bunkr\.ru/_-RnHoW69L\.mp4",
+            "pattern": r"https://media-files\.bunkr\.su/_-RnHoW69L\.mp4",
             "content": "80e61d1dbc5896ae7ef9a28734c747b28b320471",
         }),
         # cdn4
         ("https://bunkr.is/a/iXTTc1o2", {
-            "pattern": r"https://(cdn|media-files)4\.bunkr\.ru/",
+            "pattern": r"https://(cdn|media-files)4\.bunkr\.su/",
             "content": "da29aae371b7adc8c5ef8e6991b66b69823791e8",
         }),
         ("https://bunkr.to/a/Lktg9Keq"),
