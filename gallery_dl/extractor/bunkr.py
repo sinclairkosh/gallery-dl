@@ -34,7 +34,7 @@ class BunkrAlbumExtractor(LolisafeAlbumExtractor):
         }),
         # mp4 (#2239)
         ("https://app.bunkr.is/a/ptRHaCn2", {
-            "pattern": r"https://media-files\.bunkr\.su/_-RnHoW69L\.mp4",
+            "pattern": r"https://media-files8\.bunkr\.ru/_-RnHoW69L\.mp4",
             "content": "80e61d1dbc5896ae7ef9a28734c747b28b320471",
         }),
         # cdn4
